@@ -2,5 +2,4 @@
 						title = 'Koa2 Title';_context.next = 3;return (
 							ctx.render('index', {
 								title: title }));case 3:case 'end':return _context.stop();}}}, _callee, undefined);}));return function (_x, _x2) {return _ref.apply(this, arguments);};}();module.exports = exports['default'];
-
 //# sourceMappingURL=indexCtrl.js.map

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require("babel-polyfill");
 var path = require('path');
 var projectRootPath = path.resolve(__dirname, '..');
 var srcPath = path.join(projectRootPath, 'src');
@@ -15,7 +16,7 @@ var watcher = chokidar.watch(path.join(__dirname, '../src'));
 watcher.on('ready', function () {
 	log('Compiling...'.green);
 	babelCliDir({ outDir: 'app/', retainLines: true, sourceMaps: true }, ['src/']); // Compile all when start
-	require('../app'); // start app
+	require('../app/devApp'); // start app
 	log('♪ App Started'.green);
 
 	watcher
