@@ -1,1 +1,0 @@
-{"version":3,"sources":["../../src/config/default.js"],"names":["port"],"mappings":"6FAAe;AACdA,OAAM,IADQ,E","file":"default.js","sourcesContent":["export default {\r\n\tport: 1991\r\n}"]}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/index.js"],"names":[],"mappings":"2EAAA,4B","file":"index.js","sourcesContent":["import app from './app';\r\nexport default app;"]}
