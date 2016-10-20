@@ -4,8 +4,8 @@ var webpack = require('webpack');
 module.exports = {
 	entry: [
 		// For old browsers
-		// 'eventsource-polyfill',
-		// 'webpack-hot-middleware/client?path=/__webapck_hmr&timeout=20000',
+		'eventsource-polyfill',
+		'webpack-hot-middleware/client?path=/__webapck_hmr&timeout=20000',
 		'./client/components/index.js'
 	],
 	output: {
@@ -38,8 +38,8 @@ module.exports = {
 		]
 	},
 	plugins: [
-		// new webpack.optimize.OccurenceOrderPlugin(),
-		// new webpack.HotModuleReplacementPlugin(),
+		new webpack.optimize.OccurenceOrderPlugin(),
+		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin()
 	]
 }

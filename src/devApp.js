@@ -1,6 +1,6 @@
 import Koa from 'koa'; // koa@2
 import webpack from 'webpack';
-import koaDevMiddleware from './middlewares/koa2WebpackDevMiddleware';
+import {webpackDevMiddleware, webpackHotMiddleware} from './middlewares';
 import middlewaresRegister from './middlewaresRegister';
 import server from './server';
 import devConfig from '../webpack/webpack.config.dev';
@@ -9,7 +9,7 @@ const compiler = webpack(devConfig);
 
 const app = new Koa();
 
-const koaDevMiddlewareInstance = koaDevMiddleware(compiler, {
+const devMiddlewareInstance = webpackDevMiddleware(compiler, {
     // publicPath is required, whereas all other options are optional
     noInfo: false,
     // display no info to console (only warnings and errors)
@@ -31,8 +31,11 @@ const koaDevMiddlewareInstance = koaDevMiddleware(compiler, {
     }
 });
 
+const hotMiddlewareInstance = webpackHotMiddleware(compiler);
+
 // register middlewares
-app.use(koaDevMiddlewareInstance);
+app.use(devMiddlewareInstance);
+app.use(hotMiddlewareInstance);
 middlewaresRegister(app);
 
 // error logger
