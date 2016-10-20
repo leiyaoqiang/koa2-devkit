@@ -45,3 +45,6 @@ jspm_packages
 
 # compiled serve directory
 app
+
+# cpmpiled client directory
+public/build
