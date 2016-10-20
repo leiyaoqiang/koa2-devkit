@@ -1,20 +1,17 @@
-// import path from 'path';
-// import webpack from 'webpack';
 var path = require('path');
 var webpack = require('webpack');
 
-// export default {
 module.exports = {
 	entry: [
 		// For old browsers
-		'eventsource-polyfill',
-		'webpack-hot-middleware/client?path=/__webapck_hmr&timeout=20000',
+		// 'eventsource-polyfill',
+		// 'webpack-hot-middleware/client?path=/__webapck_hmr&timeout=20000',
 		'./client/components/index.js'
 	],
 	output: {
 		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, './assets'),
-		publicPath: '/assets/'
+		path: path.resolve(__dirname, '../public/build'),
+		publicPath: '/build/'
 	},
 	module: {
 		loaders: [
@@ -24,11 +21,12 @@ module.exports = {
 				loader: 'babel',
 				query: {
 					'presets': ['es2015', 'stage-3', 'react'],
-					'env': {
-						'development': {
-							'presets': ['react-hmre']
-						}
-					}
+					"plugins": ["add-module-exports"],
+					// 'env': {
+					// 	'development': {
+					// 		'presets': ['react-hmre']
+					// 	}
+					// }
 				}
 			},{
 				test: /\.less$/,
@@ -40,8 +38,8 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new webpack.optimize.OccurenceOrderPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
+		// new webpack.optimize.OccurenceOrderPlugin(),
+		// new webpack.HotModuleReplacementPlugin(),
 		new webpack.NoErrorsPlugin()
 	]
 }
