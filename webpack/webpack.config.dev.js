@@ -3,9 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
 	entry: [
-		// For old browsers
-		'eventsource-polyfill',
-		'webpack-hot-middleware/client?path=/__webapck_hmr&timeout=20000',
+		'webpack-hot-middleware/client',
 		'./client/components/index.js'
 	],
 	output: {
@@ -22,11 +20,6 @@ module.exports = {
 				query: {
 					'presets': ['es2015', 'stage-3', 'react'],
 					"plugins": ["add-module-exports"],
-					// 'env': {
-					// 	'development': {
-					// 		'presets': ['react-hmre']
-					// 	}
-					// }
 				}
 			},{
 				test: /\.less$/,
