@@ -1,11 +1,12 @@
 'use strict';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
-class Hello extends React.Component {
+export default class Hello extends Component {
+	constructor (props, context) {
+		super(props, context);
+	}
+
 	render () {
-		return <h1>Hello</h1>
+		return <h1>Hello {this.props.name}</h1>
 	}
 }
-
-ReactDOM.render(<Hello />, document.getElementById('hello'));
