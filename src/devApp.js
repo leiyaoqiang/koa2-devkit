@@ -10,7 +10,7 @@ const compiler = webpack(devConfig);
 const app = new Koa();
 
 const devMiddlewareInstance = webpackDevMiddleware(compiler, {
-    noInfo: false,
+    noInfo: true,
     publicPath: devConfig.output.publicPath
 });
 

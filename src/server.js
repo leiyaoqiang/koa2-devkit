@@ -1,9 +1,9 @@
 import http from 'http';
-import config from './config';
+import { nodeServer } from './config';
 
 export default (app) => {
 	// create server
-	const port = parseInt(app.env.NODE_PORT || config.port || '1991');
+	const port = parseInt(app.env.NODE_PORT || nodeServer.port || '1991');
 	const server = http.createServer(app.callback());
 
 	server.listen(port);

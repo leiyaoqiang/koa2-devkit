@@ -1,16 +1,15 @@
 import 'isomorphic-fetch'
+import { apiServer } from '../config'
 
-const HOA_URL = 'https://api.github.com/';
+const API_SERVER_URL = apiServer.url;
 
-export default async function (body) {
-	const url = HOA_URL;
+export default async function (body = {}, url = API_SERVER_URL) {
 	const defOpts = {
 		headers: { 'Content-Type': 'application/json; charset=utf-8' },
-		method: 'POST',
-		body
+		method: 'POST'
 	};
 
-	return await fetch(url, opts)
+	return await fetch(url, Object.assign({}, defOpts, { body }))
 		.then(response => {
 			if (!response.ok) {
 				if (response.stateCode !== 200) {

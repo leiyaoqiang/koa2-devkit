@@ -14,6 +14,8 @@ import convert from 'koa-convert';
 import json from 'koa-json';
 import error from 'koa-error';
 
+import { forwardApiMiddleware } from './middlewares'
+
 import { RedisStore } from './modules'
 import router from './routes';
 
@@ -53,6 +55,8 @@ export default (app) => {
 		const ms = new Date() - start;
 		console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 	});
+
+	app.use(forwardApiMiddleware());
 
 	// response router
 	app.use(require('./routes'));

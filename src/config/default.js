@@ -1,3 +1,5 @@
 export default {
-	port: 1991
+	nodeServer: {
+		port: 1991
+	}
 }
