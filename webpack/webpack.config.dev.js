@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
+	devTool: 'cheap-module-eval-source-map',
 	entry: [
 		'webpack-hot-middleware/client?reload=1',
 		'./client/components/index.js'

@@ -5,4 +5,6 @@ const router = new Router();
 
 router.get('/', indexCtrl);
 
-export default router;
+export default async function (ctx, next) {
+	await router.routes()(ctx, next);
+};

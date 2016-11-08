@@ -6,6 +6,7 @@ import views from 'koa-views'; // master
 import favicon from 'koa-favicon'; // @2
 import serveStatic from 'koa-static'; // master
 import logger from 'koa-logger'; // @2
+import session from 'koa-session2'
 
 import convert from 'koa-convert';
 // need convert
@@ -13,12 +14,16 @@ import convert from 'koa-convert';
 import json from 'koa-json';
 import error from 'koa-error';
 
+import { RedisStore } from './modules'
 import router from './routes';
 
 export default (app) => {
 	// middleware
 	app.use(logger());
 	app.use(bodyParser());
+	app.use(session({
+		store: new RedisStore()
+	}));
 	app.use(convert(json()));
 
 	// static (production env)
@@ -50,9 +55,7 @@ export default (app) => {
 	});
 
 	// response router
-	app.use(async (ctx, next) => {
-		await require('./routes').routes()(ctx, next);
-	});
+	app.use(require('./routes'));
 
 	// 404
 	app.use(async (ctx) => {
