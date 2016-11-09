@@ -1,0 +1,34 @@
+.pageDiv {
+	margin-left: 10px;
+	margin-top: 5px;
+	/* border: 1px solid #8B5A00; */
+	/*border: 1px solid black;*/
+	height: 35px;
+}
+
+.pageDiv #perpage {
+	float: left;
+	margin-left: 20px;
+	line-height: 35px;
+	height: 35px;
+}
+
+.pageDiv #perpage .pageselect{
+	margin-top:6px;
+}
+
+.pageDiv #navigation {
+	float: right;
+	margin-right: 40px;
+	line-height: 35px;
+}
+
+.pageDiv #navigation a {
+	margin-left: 8px;
+}
+
+.pageDiv #text {
+	float: right;
+	margin-right: 20px;
+	line-height: 35px;
+}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*通用样式*/
+body,div,p,a,li,ul,ol,span,input,dl, dd, dt, form, h1, h2, h3, h4, h5, h6, input, select, pre,img,textarea,blockquote,section{ padding:0px; margin:0px; list-style:none; outline:none; border:0 none; text-decoration:none;}
+body{
+    background: #f7f7f7;
+}
+table{border-collapse:collapse;border-spacing:0;}
+img{border:0;}
+em,strong,th,b,i{font-style:normal;font-weight:normal;}
+th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+input,textarea,select,button{font-family:inherit;font-size:inherit;font-weight:inherit;}
+img,input,label,button{vertical-align:middle;}
+input:focus,button:focus,select:focus,textarea:focus{outline:0;}
+
+a{blr:expression(this.onFocus=this.blur())}            /*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+a.hidefocus,a:active,a:focus,.hidefocus:focus,input[type=button] ,input[type=submit] { outline:none; -moz-outline:none;}    /*去掉a标签的虚线框，避免出现奇怪的选中区域*/
+button.hidefocus::-moz-focus-inner {  border:none; }   /*::-moz-focus-inner无边框 */
+a:link,a:visited,a:active{ color:#787878; text-decoration:none}
+a:hover{ color:#fff; text-decoration: none;}
+
+/*显示隐藏*/
+.display_none{ display:none;}
+.display_block{ display:block;}
+.display_inline_block{ display:inline-block;}
+.visibility_hidden{ visibility:hidden;}
+.visibility_visible{ visibility: visible;}
+.visibility_inherit{ visibility: inherit;  }
+
+/*定位*/
+.position_fixed{ position:fixed;}
+.position_absolute{ position: absolute;}
+.position_relative{ position: relative;}
+
+/*浮动*/
+.clearfloat{ clear:both; zoom:1;}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
+.float_left{ float:left;}
+.float_right{ float:right;}
+
+/*****公共样式表 by xy end*****/
+
+

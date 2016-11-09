@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+	font-family: tahoma, arial, "SimSun";
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* text-align: center; 支持IE5.0 margin:0 auto;居中. 但居中后会影响其他的布局 [暂时不支持IE5]*/
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+/* pageHeader css begin */
+
+div#header {
+	position:relative;text-align: left;top:-2px;
+}
+
+
+div#header #header_top{
+	height: 25px;width: 100%;	BACKGROUND-POSITION: 0px -45px;BACKGROUND-REPEAT: repeat-x;
+}
+
+div#h_top_wrap{
+ width:100%;height: 30px;margin: 0 auto;position:relative;
+}
+
+div#h_top_wrap .welcome{
+	float: left;width:300px;color: #696969;margin-left: 8px;height:23px;line-height: 23px
+}
+div#h_top_wrap .user{
+	float: right;margin-right:10px;color: black;height:23px;line-height: 23px
+}
+
+div#h_top_wrap span a{
+	color: blue;
+	font-weight: bold;
+	display: inline;
+}
+
+#site-nav {
+	margin: 2px auto;color: #000;line-height: 23px;position: relative;height: 23px;width:100%;
+}
+ 
+div#h_top_wrap span a:hover{
+	text-decoration: underline;
+	color: #f60;
+} 
+
+.quick-menu{
+	list-style-type: none;
+	right: 0;
+	top: 0;
+	position: absolute;
+}
+
+

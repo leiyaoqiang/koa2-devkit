@@ -1,0 +1,88 @@
+
+.form_body{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 380px;
+  background-color: white;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+}
+.form_body h3 span{
+  color: #34a1ec;
+}
+.form_body h3{
+  margin-top: 50px;
+}
+.user_body{
+  background: url("../image/2016.4.jpg")no-repeat;
+  background-size: cover;
+}
+.form_same input{
+  width: 70%;
+  outline: none;
+  border-color: transparent;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 12px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+.cx_form label{
+  position: relative;
+  left: 10%;
+  font-size: 12px;
+}
+.cx_form label i{
+  color: #34a1ec;
+  font-weight: bold;
+  position: relative;
+  left: -5px;
+  top: 0;
+  font-size: 16px;
+}
+.form_same{
+  position: relative;
+  margin-top: 30px;
+}
+
+.cx_submit{
+  outline: none;
+  border: 1px solid #35a1ec;
+  background-color: #35a1ec;
+  color: white;
+  margin-top: 50px;
+  width: 240px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.form_submit{
+  position: relative;
+}
+.form_others ul>li+li+li:before{
+  padding-right: 10px;
+  color: black;
+  content: "|";
+}
+.form_others li{
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 5px;
+  color: #8a8a8a;
+}
+.form_others li input{
+  position: relative;
+  top: 2px;
+  left: 3px;
+}
+input[type=checkbox]::before{
+  width: 13px;
+  height: 13px;
+  border-radius: inherit;
+}
+.form_others ul{
+  margin-left: -50px;
+  margin-top: 20px;
+}

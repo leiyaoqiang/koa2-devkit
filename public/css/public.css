@@ -1,0 +1,170 @@
+button{
+	outline: none;
+}
+
+.navbar-default{
+	background-color: #2a394e;
+	border-color: #2a394e;
+}
+/*这个active为公共样式的NAV的悬停状态*/
+.active{
+
+}
+/*这个active为公共样式的NAV的悬停颜色*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+	background-color: #243042 !important;
+	border-color: #243042!important;
+}
+.cx_nav li a:hover{
+	background-color: #243042 !important;
+	border-color: #243042!important;
+}
+/*====*/
+.navbar-nav li{
+	font-size: 16px;
+	margin-left: 10px;
+}
+.navbar-right{
+	margin-right: 50px!important;
+}
+.dropdown-menu li{
+	margin-left: 0px;
+}
+.cx_divbutton button{
+	background-color: #2a394e;
+	color: white;
+	padding: 6px 0px;
+	border: 1px solid transparent;
+}
+.cx_divbutton button i{
+	position: relative;
+	top: 1px;
+	left: -5px;
+	color: #99adce;
+}
+.cx_divbutton button:hover{
+	color: white;
+}
+.dropdown-menu li a{
+	font-size: 14px;
+	color: white;
+}
+.dropdown-menu li a:hover{
+	color: white;
+	background-color: #94a8c8;
+}
+.dropdown-menu{
+	background-color: #99adce;
+	border: 1px solid #99adce;
+	text-align: center;
+}
+.caret{
+	color: #99adce;
+}
+.cx_leftNav{
+	height: 100%;
+}
+.cx_leftNav a{
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+.cx_leftNav li{
+	list-style: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -40px;
+}
+.cx_leftNav li i{
+	padding-right: 10px;
+	font-size: 14px;
+}
+.cx_leftNav li a{
+	margin-left: 15px;
+	width: 90%;
+	display: inline-block;
+
+}
+.cx_leftNav nav{
+	background-color: #3b4b63;
+	width: 11%;
+	height: 100%;
+}
+.cx_leftNav ul>li:hover{
+	background-color: #243042;
+	transition: linear 0.3s;
+}
+.cx_leftNav ul li:hover a{
+	color: #3282bd;
+}
+.public_active{
+	background-color: #243042;
+	color: #3282bd!important;
+}
+.f_ul ol{
+	display: none;
+}
+.f_ul ol li{
+	padding-top: inherit;
+}
+.f_ul ol li:first-child{
+	padding-top: 10px;
+}
+.f_ul ol{
+    background-color: #3b4b63;
+}
+.f_ul li{
+	cursor:pointer
+}
+.left_active{
+	background-color: #243042;
+}
+.left_active a{
+	color: #3282bd!important;
+}
+.btn-group>.btn+.dropdown-toggle{
+	position: relative;
+	top: 11px;
+}
+.centerr{
+	height: 100%!important;
+}
+.btn-group>.btn{
+	float: inherit;
+}
+.caret{
+	border-left:6px solid transparent;
+	border-right:6px solid transparent;
+	border-top:6px dashed;
+}
+
+@media screen and (min-width:1280px) and (max-width:1500px){
+	.nav>li>a{
+		padding: 10px 10px;
+		padding-top: 31px;
+		padding-bottom: 31px;
+	}
+	.navbar-nav li{
+		margin-left: 0;
+	}
+	.navbar-right{
+		margin-right: 10px!important;
+	}
+}
+
+@media screen and (min-width:860px) and (max-width:1200px){
+	#rightt{
+		top: 88px!important;
+	}
+	.navbar-nav li{
+		margin-left: 0;
+	}
+	.nav>li>a{
+		padding: 10px 10px;
+		padding-top: 31px;
+		padding-bottom: 31px;
+	}
+	.navbar-right{
+		margin-right: 10px!important;
+	}
+}

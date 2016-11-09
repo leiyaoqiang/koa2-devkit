@@ -1,10 +1,18 @@
 import Redis from 'ioredis'
 import { Store } from 'koa-session2'
+import { redisServer } from '../config'
 
 export default class RedisStore extends Store {
 	constructor () {
 		super();
-		this.redis = new Redis();
+		this.redis = new Redis(
+			Object.assign({}, {
+				host: '127.0.0.1',
+				port: 6379,
+				password: '123456'
+			},
+			redisServer)
+		);
 	}
 
 	async get(sid) {

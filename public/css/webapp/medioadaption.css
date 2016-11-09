@@ -1,0 +1,26 @@
+@charset "utf-8";
+/**************autoWidth媒体查询自适应宽度布局**********************/
+@media screen and (min-device-width:1080px){
+    body{ font-size:16px;}
+}
+@media screen and (min-device-width:800px) and (max-device-width:1079px){
+    body{ font-size:18px;}
+}
+@media screen and (min-device-width:720px) and (max-device-width:799px){
+    body{ font-size:16px;}
+}
+@media screen and (min-device-width:480px) and (max-device-width:719px){
+    body{ font-size:16px;}
+}
+@media screen and (min-device-width:400px) and (max-device-width:479px){
+    body{ font-size:16px;}
+}
+@media screen and (min-device-width:360px) and (max-device-width:399px){
+    body{ font-size:16px;}
+}
+@media screen and (min-device-width:320px) and (max-device-width:359px){
+    body{ font-size:14px;}
+}
+@media screen and (max-device-width:319px) {
+    body{ font-size:12px;}
+}

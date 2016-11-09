@@ -1,0 +1,114 @@
+
+.newPage {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  /*border: 1px solid rosybrown;*/
+
+}
+
+.newPage div {
+  height: 40px;
+  line-height: 28px;
+}
+
+.newPage .leftpart {
+  /*width: 25%;*/
+  float: left;
+  text-align: right;
+  /*background: hotpink;*/
+}
+
+.newPage .middlepart {
+  /*width: 50%;*/
+  float: left;
+  text-align: center;
+  /*background: firebrick;*/
+}
+
+.newPage .rightpart {
+  /*width: 25%;*/
+  float: left;
+  text-align: left;
+  /*background: darkgray;*/
+}
+
+.view {
+  width: 70px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #35a1ec;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.view:hover {
+  background: #8cc4ee;
+}
+
+.midCon {
+  float: left;
+}
+
+.page_span {
+  /*display: inline-block;*/
+  float: left;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  border-top: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  /*margin-right: -3px;*/
+}
+
+.page_span:last-child {
+  border-right: 1px solid #d1d1d1;
+}
+
+.page_span:hover {
+  background: #35a1ec;
+  color: #fff;
+  border: 1px solid #35a1ec;
+}
+
+.afirst {
+  background: #35a1ec;
+  color: #fff;
+  border: 1px solid #35a1ec;
+}
+
+.page_search {
+  width: auto;
+  height: 30px !important;
+  line-height: 30px;
+  float: left;
+  border: 1px solid #D6D6D6;
+  margin-left: 5px;
+}
+
+.page_input_box {
+  border: 1px solid #D6D6D6;
+  width: 50px;
+  text-align: center;
+  line-height: 17px;
+  float: left;
+  margin-left: 5px;
+  margin-top: 3px;
+  outline: none;
+}
+
+.page_search span {
+  display: inline-block;
+  font-size: 14px;
+  /*margin: 5px;*/
+}

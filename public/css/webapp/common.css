@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.infoTitle{
+    margin: 1em 0;
+    padding:0 1.07em;
+    height: 3.9em;
+}
+p.imgMain{
+    width:3.9em;
+    height:3.9em;
+    background:#e6e6e6;
+    overflow:hidden;
+    border-radius: .3em;
+    -moz-border-radius: .3em;
+    -o-border-radius: .3em;
+    -webkit-border-radius: .3em;
+}
+p.imgMain img{
+    width: 100%;
+}
+p.textTit{
+    position: absolute;
+    left: 4.5em;
+    font-size: 1.286em;
+    color: #000;
+}
+.infoApplyList{
+    width: 100%;
+    border-bottom: 1px solid #cfcfcf;
+    border-top: 1px solid #cfcfcf;
+    background: #e6e6e6;
+    overflow: hidden;
+}
+ul.infoApplyUl{
+    height:14.71em;
+    clear: both;
+    overflow: hidden;
+    background: #e6e6e6;
+    padding:.5em 0;
+    margin-left: 1px;
+}
+ul.infoApplyUl li{
+    height: 14.71em;
+    float: left;
+    text-align: center;
+	padding:0 .2em;
+}
+ul.infoApplyUl li p{
+    height: 14.71em;
+    background: #adc2cc;
+    display: inline-block;
+}
+ul.infoApplyUl li p img{
+    height: 14.71em;
+	width:auto;
+}
+.applyIntroduce{
+    padding: 0 1.07em;
+}
+p.applyIntTit{
+    padding: .5em 0 .5em 1.45em;
+    color: #000;
+    font-size: 1.14em;
+    background: url("/armp/resource/image/webapp/infoIcon_03.png") 0 center no-repeat;
+    background-size:1.1em;
+}
+p.applyIntTit span{
+    top:.1em;
+}
+p.applyIntCon{
+    font-size: 1em;
+    color: rgba(0,0,0,.87);
+    line-height: 1.6;
+    word-break: break-all;
+}
+p.applyIntBot{
+    padding: .8em 0;
+}
+p.applyIntBot a{
+    color: #57add9;
+    font-size: .875em;
+}
+p.applyIntBot a:active,p.applyIntBot a.applyIntBotActive{
+    color: #5078A2;
+}
+
+
+.img_tab {width:100%;width:100%;background:#FFF;position:fixed;top:0;left:0;z-index:9999;}
+.img_back {font-size:2em;height:1em; line-height:1;padding:.25em;color:#999;text-align:right;}
+/*banner轮循样式*/
+.sliderbox {position:relative;}
+.sliderbox .hd {z-index:1;text-align:center;padding-top:1em;}
+.sliderbox .hd ul {height:2em;}
+.sliderbox .hd li {display:inline-block;height:.5em;width:.5em;border-radius:.25em;background:#CCC;margin-left:.5em;}
+.sliderbox .hd li.on {background:#247fe5;}
+.sliderbox .bd {position:relative;z-index:0;}
+.sliderbox .bd li {text-align:center;}
+.sliderbox .bd li img {}
+/*.sliderbox .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}*/
+.sliderbox .bd li .tit{ display:block; width:100%;  position:absolute; bottom:0; text-indent:0.8em; height:2.2em; line-height:2.3em; background:rgba(0,0,0,0.3); color:#fff; font-size:1.16em;}
+/*END全局导航*/

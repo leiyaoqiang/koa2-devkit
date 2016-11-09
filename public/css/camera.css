@@ -1,0 +1,23 @@
+body {
+  background-color: #e3e7f0;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.panel-title{
+  padding: 20px;
+  background: #eef1f7;
+}
+.form-control{width: 40%;}
+.control-label {
+  font-weight: normal;
+  color: #666;
+  color: #666;
+}
+.form-group button {
+  width: 122px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
