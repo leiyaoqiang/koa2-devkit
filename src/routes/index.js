@@ -4,8 +4,8 @@ import loginCtrl from '../controllers/loginCtrl';
 
 const router = new Router();
 
-router.get('/', indexCtrl);
-router.get('/login', loginCtrl);
+router.get('*', indexCtrl);
+// router.get('/login', loginCtrl);
 
 export default async function (ctx, next) {
 	return await router.routes()(ctx, next);

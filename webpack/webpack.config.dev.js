@@ -8,8 +8,9 @@ module.exports = {
 		'./client/index.js'
 	],
 	output: {
-		filename: '[name].bundle.js',
+		filename: '[name].js',
 		path: path.resolve(__dirname, '../public/build'),
+		chunkFilename: '[name].[chunkhash:5].chunk.js',
 		publicPath: '/build/'
 	},
 	module: {
@@ -33,6 +34,7 @@ module.exports = {
 	plugins: [
 		new webpack.optimize.OccurenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoErrorsPlugin()
+		new webpack.NoErrorsPlugin(),
+		new webpack.optimize.CommonsChunkPlugin('common.js')
 	]
 }
